@@ -42,7 +42,7 @@ h2 {
     padding: 10px;
 }
 
-.empty-task-list{
+.new-tasks__span{
     color: red;
     font-weight: bolder;
 }

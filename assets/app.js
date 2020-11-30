@@ -1,6 +1,7 @@
 const newTasks = document.getElementById('new-tasks');
 const addTask = document.getElementById('add-task');
 const taskText = document.getElementById('task-text');
+const emptyTaskList = document.getElementById('empty-task-list');
 
 addTask.addEventListener('click', function () {
 
@@ -10,6 +11,8 @@ addTask.addEventListener('click', function () {
     let newTextLineEditButton = document.createElement('button');
 
     if (taskText.value !== '') {
+
+        emptyTaskList.remove();
 
         newTextLine.innerText = '-' + taskText.value;
         newTextLineEditButton.innerText = 'Edit';
