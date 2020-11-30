@@ -6,18 +6,20 @@ addTask.addEventListener('click', function () {
     let newTextLine = document.createElement('p');
     let newTextLineRemoveButton = document.createElement('button');
 
-    newTextLine.innerText = "-" + taskText.value;
-    newTextLineRemoveButton.innerText = "-";
+    newTextLine.innerText = '-' + taskText.value;
+    newTextLineRemoveButton.innerText = '-';
 
     newTasks.appendChild(newTextLine);
     newTextLine.appendChild(newTextLineRemoveButton);
+
+    newTextLineRemoveButton.classList.add('remove-task');
 
     newTextLineRemoveButton.addEventListener('click', function () {
         newTasks.removeChild(newTextLine);
     });
 
     newTextLine.addEventListener('click', function () {
-        newTextLine.style.textDecoration = "line-through";
+        newTextLine.style.textDecoration = 'line-through';
     });
 });
 
