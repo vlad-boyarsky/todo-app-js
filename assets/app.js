@@ -9,7 +9,7 @@ addTask.addEventListener('click', function () {
     newTextLine.innerText = '-' + taskText.value;
     newTextLineRemoveButton.innerText = '-';
 
-    newTasks.appendChild(newTextLine);
+    newTasks.insertBefore(newTextLine, newTasks.firstChild);
     newTextLine.appendChild(newTextLineRemoveButton);
 
     newTextLineRemoveButton.classList.add('remove-task');
