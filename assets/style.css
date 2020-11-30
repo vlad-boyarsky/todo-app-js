@@ -35,6 +35,18 @@ h2 {
     padding: 11px 15px;
 }
 
+.new-tasks {
+    border: 1px solid grey;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.empty-task-list{
+    color: red;
+    font-weight: bolder;
+}
+
 .remove-task {
     margin: 5px 0 5px 0;
     background-color: tomato;
