@@ -3,7 +3,7 @@ const addTask = document.getElementById('add-task');
 const taskText = document.getElementById('task-text');
 const emptyTaskList = document.getElementById('empty-task-list');
 
-addTask.addEventListener('click', function () {
+addTask.addEventListener('click', () => {
 
     let newTextLine = document.createElement('p');
     let newTextLineRemoveButton = document.createElement('button');
@@ -31,20 +31,20 @@ addTask.addEventListener('click', function () {
         taskText.value = '';
     }
 
-    newTextLineRemoveButton.addEventListener('click', function () {
+    newTextLineRemoveButton.addEventListener('click', () => {
         newTasks.removeChild(newTextLine);
 
-        if(newTasks.childElementCount === 1){
+        if (newTasks.childElementCount === 1) {
             emptyTaskList.style.display = 'block';
         }
 
     });
 
-    newTextLineDoneButton.addEventListener('click', function () {
+    newTextLineDoneButton.addEventListener('click', () => {
         newTextLine.style.textDecoration = 'line-through';
     });
 
-    newTextLineEditButton.addEventListener('click', function () {
+    newTextLineEditButton.addEventListener('click', () => {
         newTextLine.innerText = '-' + prompt();
         newTextLine.appendChild(newTextLineEditButton);
         newTextLine.appendChild(newTextLineDoneButton);
