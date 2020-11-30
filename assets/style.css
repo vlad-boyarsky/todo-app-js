@@ -1,28 +1,28 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: sans-serif;
 }
 
-hr{
+hr {
     margin: 10px 0 10px 0;
 }
 
-.task-container{
+.task-container {
     display: block;
     text-align: center;
 }
 
-.task-container__input{
+.task-container__input {
     height: 32px;
     padding: 5px;
 }
 
-.task-container__button{
+.task-container__button {
     background-color: green;
     color: white;
     border: 0;
@@ -30,11 +30,29 @@ hr{
     padding: 10px;
 }
 
-.remove-task{
-    margin: 5px 0 5px 5px;
+.remove-task {
+    margin: 5px 0 5px 0;
     background-color: tomato;
     color: white;
     border: 0;
-    font-size: 10px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.done-task {
+    margin: 5px 0 5px 5px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.edit-task {
+    margin: 5px 0 5px 5px;
+    background-color: orange;
+    color: white;
+    border: 0;
+    font-size: 15px;
     padding: 10px;
 }
