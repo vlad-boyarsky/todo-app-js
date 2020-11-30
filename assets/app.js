@@ -12,7 +12,7 @@ addTask.addEventListener('click', function () {
 
     if (taskText.value !== '') {
 
-        emptyTaskList.remove();
+        emptyTaskList.style.display = 'none';
 
         newTextLine.innerText = '-' + taskText.value;
         newTextLineEditButton.innerText = 'Edit';
@@ -33,6 +33,11 @@ addTask.addEventListener('click', function () {
 
     newTextLineRemoveButton.addEventListener('click', function () {
         newTasks.removeChild(newTextLine);
+
+        if(newTasks.childElementCount === 1){
+            emptyTaskList.style.display = 'block';
+        }
+
     });
 
     newTextLineDoneButton.addEventListener('click', function () {
