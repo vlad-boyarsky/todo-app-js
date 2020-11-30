@@ -25,6 +25,7 @@ addTask.addEventListener('click', function () {
         newTextLineDoneButton.classList.add('done-task');
         newTextLineEditButton.classList.add('edit-task');
 
+        taskText.value = '';
     }
 
     newTextLineRemoveButton.addEventListener('click', function () {
