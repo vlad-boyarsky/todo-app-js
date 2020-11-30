@@ -4,11 +4,15 @@ const taskText = document.getElementById('task-text');
 
 addTask.addEventListener('click', function () {
     let newTextLine = document.createElement('p');
+    let newTextLineRemoveButton = document.createElement('button');
 
     newTextLine.innerText = "-" + taskText.value;
-    newTasks.appendChild(newTextLine);
+    newTextLineRemoveButton.innerText = "-";
 
-    newTextLine.addEventListener('dblclick', function () {
+    newTasks.appendChild(newTextLine);
+    newTextLine.appendChild(newTextLineRemoveButton);
+
+    newTextLineRemoveButton.addEventListener('click', function () {
         newTasks.removeChild(newTextLine);
     });
 
