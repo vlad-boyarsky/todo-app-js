@@ -8,6 +8,10 @@ addTask.addEventListener('click', function () {
     newTextLine.innerText = "-" + taskText.value;
     newTasks.appendChild(newTextLine);
 
+    newTextLine.addEventListener('dblclick', function () {
+        newTasks.removeChild(newTextLine);
+    });
+
     newTextLine.addEventListener('click', function () {
         newTextLine.style.textDecoration = "line-through";
     });
