@@ -45,7 +45,7 @@ addTask.addEventListener('click', () => {
     });
 
     newTextLineEditButton.addEventListener('click', () => {
-        newTextLine.innerText = '-' + prompt();
+        newTextLine.innerText = '-' + prompt('Edit', 'Task');
         newTextLine.appendChild(newTextLineEditButton);
         newTextLine.appendChild(newTextLineDoneButton);
         newTextLine.appendChild(newTextLineRemoveButton);
