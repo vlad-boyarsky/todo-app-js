@@ -31,7 +31,7 @@ addTask.addEventListener('click', function () {
     });
 
     newTextLineEditButton.addEventListener('click', function () {
-        newTextLine.innerText = prompt();
+        newTextLine.innerText = '-' + prompt();
         newTextLine.appendChild(newTextLineEditButton);
         newTextLine.appendChild(newTextLineDoneButton);
         newTextLine.appendChild(newTextLineRemoveButton);

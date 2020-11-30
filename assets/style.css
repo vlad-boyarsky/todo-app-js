@@ -40,8 +40,8 @@ hr {
 }
 
 .done-task {
-    margin: 5px 0 5px 5px;
-    background-color: orange;
+    margin: 5px 0 5px 0;
+    background-color: blue;
     color: white;
     border: 0;
     font-size: 15px;
